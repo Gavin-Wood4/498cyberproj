@@ -4,3 +4,21 @@ body {
 	padding-top: 50px;
 }
 
+.login-container {
+	border: 1px solid #dadce0;
+	box-shadow: none;
+	width: 448px;
+	padding: 48px 40px 36px;
+	margin: auto;
+}
+
+.google-logo {
+	width: 74px;
+	height: 24px;
+	margin-bottom: 24px;
+}
+
+.input-group {
+	margin-bottom: 24px;
+	position: relative;
+}
