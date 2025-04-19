@@ -30,3 +30,9 @@ def init_db();
     print("Table exists, or it has been created.")
     conn.close()
 
+init_db()
+
+@app.route('/') # When entering site base directory: 127.0.0.1:5000, run index
+def index():
+    session.pop('username', None)   # Clear any previous session data
+    return render_template('email_page.html')
