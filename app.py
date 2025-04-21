@@ -14,7 +14,7 @@ def get_db():
     conn.row_factory = sqlite3.Row
     return conn
 
-def init_db();
+def init_db():
     conn = get_db()
     cursor = conn.cursor()
     print("Checking if table exists, otherwise creating a table.")
@@ -48,7 +48,7 @@ def handle_email():
 
     return render_template('password_page.html', username=email)
 
-app.route('/handle_password', methods=['POST'])
+@app.route('/handle_password', methods=['POST'])
 def handle_password():
     password = request.form.get('password')
     username = session.get('username')
