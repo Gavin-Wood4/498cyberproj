@@ -97,29 +97,46 @@ body {
 }
 
 .submit-button {
-	
+	padding: 8px 24px;
+	font-weight: 500;
+	letter-spacing: .25px;	
 }
 
 .username-display {
-
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #dadce0;
+	border-radius: 100px;
+	padding: 4px 12px 4px 8px;
+	margin: 16px auto 32px;
+	font-size: 14px;
+	color: #3c4043;
+	width: fit-content;
+	cursor: pointer;
 }
 .username-display:hover {
-
+	background-color: #f8f9fa
 }
 
 .person-icon {
-
+	margin-right: 8px;
 }
 .dopdown-icon {
-
+	margin-left: 16px;
 }
 
 .show-password-container {
-
+	text-align: left;
+	margin-top 16px;
+	margin-bottom: 24px;
 }
 .show-password-container label {
-
+	font-size: 14px;
+	color: #282124;
+	margin-left: 8px;
+	cursor: pointer;
 }
 .show-password-container input {
-
+	cursor: pointer;
 }
