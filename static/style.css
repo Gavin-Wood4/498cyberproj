@@ -13,11 +13,20 @@ body {
 }
 
 .login-container h1 {
-	
+	font-family: 'Google Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 1.3333;
+	margin-bottom: 8px;
+	color: $202124;	
 }
 
 .login-container p {
-	
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	margin-bottom: 24px;
+	color: #202124;
 }
 
 .google-logo {
