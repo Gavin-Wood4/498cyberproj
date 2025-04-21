@@ -12,6 +12,14 @@ body {
 	margin: auto;
 }
 
+.login-container h1 {
+	
+}
+
+.login-container p {
+	
+}
+
 .google-logo {
 	width: 74px;
 	height: 24px;
@@ -21,4 +29,71 @@ body {
 .input-group {
 	margin-bottom: 24px;
 	position: relative;
+}
+
+.input-group input {
+
+}
+
+.input-group input:focus {
+
+}
+
+.links-container {
+
+}
+
+.link-button {
+
+}
+
+.link-button:hover {
+
+}
+
+.info-text {
+
+}
+
+.info-text a {
+	
+}
+
+.info-text a:hover {
+	
+}
+
+.bottom-container {
+
+}
+.password-bottom-container {
+
+}
+
+.submit-button {
+	
+}
+
+.username-display {
+
+}
+.username-display:hover {
+
+}
+
+.person-icon {
+
+}
+.dopdown-icon {
+
+}
+
+.show-password-container {
+
+}
+.show-password-container label {
+
+}
+.show-password-container input {
+
 }
